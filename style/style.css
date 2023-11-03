@@ -1,38 +1,43 @@
-body{
+body {
   font-family: 'Roboto', sans-serif;
 }
 
 /* header */
 
-.my_logo-lg{
+.my_logo-lg {
   display: none;
 }
 
 .my_logo-sm {
-  height: 57px;
+  height: 40px;
 }
 
-.my_logo-sm img{
+.my_logo-sm img {
   height: 100%;
+  scale: 1.5;
 }
 
-.my_search{
+.my_search {
   width: 100%;
 }
 
 /* aside */
 
-aside{
+aside {
   background-image: url(../img/sidebar-bg.png);
   background-color: #051e34;
-  height: calc(100vh - 57px);
-  width: 80px;
+  height: calc(100vh - 50px);
+  width: 50px;
   color: white;
 }
 
 aside ul {
   padding: 0 1rem;
   list-style: none;
+}
+
+.my_lg_aside {
+  display: none;
 }
 
 aside a {
@@ -42,20 +47,30 @@ aside a {
 
 /* main-content */
 
-.main-content{
+.main-content {
   background-color: lightgreen;
   width: 100%;
   overflow-y: scroll;
 }
 
 @media screen and (min-width:992px) {
-  .my_logo-lg{
+  .my_logo-lg {
     display: block;
   }
-  .my_logo-sm{
+
+  .my_logo-sm {
     display: none;
   }
-  aside{
+
+  aside {
     width: 200px;
+  }
+
+  .my_lg_aside {
+    display: block;
+  }
+
+  .my_sm_aside {
+    display: none;
   }
 }
