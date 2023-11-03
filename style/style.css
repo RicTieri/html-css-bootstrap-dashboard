@@ -17,19 +17,28 @@ body {
   scale: 1.5;
 }
 
-form {
+header form {
   width: 100%;
+  position: relative;
 }
 
-.my_search-bg{
-  background-color: lightgray;
+.my_search-bg {
+  background-color: #e5e5e5;
+  padding-left: 3rem;
 }
 
-.my_collapse{
+.fa-magnifying-glass {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.my_collapse {
   display: none;
 }
 
-.fa-bell{
+.fa-bell {
   color: goldenrod;
 }
 
@@ -66,6 +75,37 @@ aside a {
   overflow-y: scroll;
 }
 
+.header-banner{
+  background-color: #1b72e8;
+  color: white;
+}
+
+.header-banner h1{
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.myspacer{
+  display: inline;
+}
+
+.my_item-lg{
+  display: none;
+}
+
+.my_item-sm{
+  display: inline-block;
+}
+
+.custom-btn{
+  display: inline-block;
+  background-color: #165bba;
+  border-radius: 20px;
+  font-size: .8rem;
+}
+
+/* media queries */
+
 @media screen and (min-width:992px) {
   .my_logo-lg {
     display: block;
@@ -75,7 +115,7 @@ aside a {
     display: none;
   }
 
-  .my_collapse{
+  .my_collapse {
     display: block;
   }
 
@@ -88,6 +128,14 @@ aside a {
   }
 
   .my_sm_aside {
+    display: none;
+  }
+
+  .my_item-lg{
+    display: inline-block;
+  }
+
+  .my_item-sm{
     display: none;
   }
 }
