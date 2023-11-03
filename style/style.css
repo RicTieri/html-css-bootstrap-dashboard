@@ -1,0 +1,26 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  height: 80px;
+  background-color: lightcoral;
+}
+
+aside{
+  background-color: lightslategrey;
+  height: calc(100vh - 80px);
+  width: 80px;
+}
+
+.main-content{
+  background-color: lightgreen;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width:992px) {
+  aside{
+    width: 200px;
+  }
+}
