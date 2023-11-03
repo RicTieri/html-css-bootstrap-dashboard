@@ -22,10 +22,27 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand bg-body-tertiary">
       <div class="container-fluid d-flex">
-        <a class="navbar-brand my_logo-lg" href="#"><img src="./img/logo.svg" alt=""></a>
-        <a class="navbar-brand my_logo-sm" href="#"><img src="./img/mobile-logo.png" alt=""></a>
+        <a class="navbar-brand my_logo-lg" href="#"><img src="./img/logo.svg" alt="logo-lg"></a>
+        <a class="navbar-brand my_logo-sm" href="#"><img src="./img/mobile-logo.png" alt="logo-sm"></a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 my_search-bg" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link my_collapse" aria-current="page" href="#"><i class="fa-solid fa-list-ul"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my_collapse" href="#"><i class="fa-solid fa-circle-question"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my_collapse" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>

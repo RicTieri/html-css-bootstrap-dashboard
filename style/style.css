@@ -9,17 +9,30 @@ body {
 }
 
 .my_logo-sm {
-  height: 40px;
+  width: 40px;
 }
 
 .my_logo-sm img {
-  height: 100%;
+  width: 100%;
   scale: 1.5;
 }
 
-.my_search {
+form {
   width: 100%;
 }
+
+.my_search-bg{
+  background-color: lightgray;
+}
+
+.my_collapse{
+  display: none;
+}
+
+.fa-bell{
+  color: goldenrod;
+}
+
 
 /* aside */
 
@@ -60,6 +73,10 @@ aside a {
 
   .my_logo-sm {
     display: none;
+  }
+
+  .my_collapse{
+    display: block;
   }
 
   aside {
