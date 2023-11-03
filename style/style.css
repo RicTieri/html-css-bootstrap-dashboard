@@ -104,6 +104,13 @@ aside a {
   font-size: .8rem;
 }
 
+.my_add-btn{
+  border: 1px solid white;
+  padding: .5rem .75rem;
+  margin: 0 1rem;
+  border-radius: 5px;
+}
+
 /* media queries */
 
 @media screen and (min-width:992px) {
@@ -131,6 +138,9 @@ aside a {
     display: none;
   }
 
+}
+
+@media screen and (min-width:1200px) {
   .my_item-lg{
     display: inline-block;
   }
