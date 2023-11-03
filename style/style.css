@@ -48,13 +48,13 @@ header form {
 aside {
   background-image: url(../img/sidebar-bg.png);
   background-color: #051e34;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 64px);
   width: 50px;
   color: white;
 }
 
 aside ul {
-  padding: 0 1rem;
+  padding: 0 .55rem;
   list-style: none;
 }
 
@@ -65,6 +65,14 @@ aside ul {
 aside a {
   text-decoration: none;
   color: white;
+}
+
+aside li:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+aside li{
+  padding: .5rem;
 }
 
 /* main-content */
@@ -111,6 +119,12 @@ aside a {
   border-radius: 5px;
 }
 
+.my_add-btn:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
 /* media queries */
 
 @media screen and (min-width:992px) {
@@ -127,7 +141,8 @@ aside a {
   }
 
   aside {
-    width: 200px;
+    height: calc(100vh - 57px);
+    width: 170px;
   }
 
   .my_lg_aside {
