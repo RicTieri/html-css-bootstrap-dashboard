@@ -8,16 +8,39 @@ body{
   display: none;
 }
 
-.my_logo-sm{
+.my_logo-sm {
   height: 57px;
 }
+
+.my_logo-sm img{
+  height: 100%;
+}
+
+.my_search{
+  width: 100%;
+}
+
+/* aside */
 
 aside{
   background-image: url(../img/sidebar-bg.png);
   background-color: #051e34;
   height: calc(100vh - 57px);
   width: 80px;
+  color: white;
 }
+
+aside ul {
+  padding: 0 1rem;
+  list-style: none;
+}
+
+aside a {
+  text-decoration: none;
+  color: white;
+}
+
+/* main-content */
 
 .main-content{
   background-color: lightgreen;
