@@ -139,6 +139,17 @@ aside li{
 
 /* media queries */
 
+@media  screen and (max-width:576px) {
+  th:nth-child(2),
+  th:nth-child(3){
+    display: none;
+  }
+  td:nth-child(2),
+  td:nth-child(3){
+    display: none;
+  }
+}
+
 @media screen and (min-width:992px) {
   .my_logo-lg {
     display: block;
