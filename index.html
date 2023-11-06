@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="UTF-8">
@@ -101,7 +101,7 @@
               data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
               <i class="fa-solid fa-plus"></i>
             </button>
-            <div class="offcanvas offcanvas-end w-auto" tabindex="-1" id="offcanvasExample"
+            <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasExample"
               aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title">Inserisci un nuovo studente</h5>
@@ -117,6 +117,65 @@
                     <div class="mb-3 col-6">
                       <label for="formGroupExampleInput2" class="form-label">Cognome</label>
                       <input type="text" class="form-control" id="formGroupExampleInput2">
+                    </div>
+                    <div class="mb-3 col-6">
+                      <label for="basic-addon1" class="form-label">Email</label>
+                      <div class="input-group mb-3 col-6">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="mb-3 col-6">
+                      <label for="formGroupExampleInput2" class="form-label">Password</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2">
+                    </div>
+                    <div class="mb-3 col-6">
+                      <label for="basic-addon1" class="form-label">Indirizzo email</label>
+                      <div class="input-group mb-3 col-6">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                          aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="mb-3 col-6">
+                      <label for="formGroupExampleInput2" class="form-label">Password</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2">
+                    </div>
+                    <div class="mb-3 col-12">
+                      <label for="formGroupExampleInput" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="mb-3 col-6">
+                      <label for="formGroupExampleInput" class="form-label">Città</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="mb-3 col-4">
+                      <label class="form-label" for="inputGroupSelect01">Stato</label>
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Scegli...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-2">
+                      <label for="formGroupExampleInput" class="form-label">CAP</label>
+                      <input type="number" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="mb-3">
+                      <label for="inputGroupFile02" class="form-label">Foto</label>
+                      <input type="file" class="form-control" id="inputGroupFile02">
+                    </div>
+
+
+                    <div class="mx-3 mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                    </div>
+                    <div>
+                      <button type="button" class="btn btn-primary">Salva</button>
+                      <button type="button" class="btn btn-warning">Svuota</button>
                     </div>
                   </div>
                 </div>
@@ -267,16 +326,50 @@
                     <div class="card-header fw-medium fs-4">
                       F.A.Q.
                     </div>
-                    <ul class="list-group list-group-flush p-3">
-                      <li class="list-group-item d-flex">
-                        Come aggiungere un nuovo studente?<i class="fa-solid fa-angle-down ms-auto"></i>
-                        <div class="my_faq_hidden"></div>
-                      </li>
-                      <li class="list-group-item d-flex">Come posso accedere alle informazioni del mio account?<i
-                          class="fa-solid fa-angle-down ms-auto"></i></li>
-                      <li class="list-group-item d-flex">Posso usare questa dashboard da mobile?<i
-                          class="fa-solid fa-angle-down ms-auto"></i></li>
-                    </ul>
+                    <div class="accordion p-3" id="accordionExample">
+                      <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Come aggiungere un nuovo studente?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Clicca sulla campanella
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Come posso accedere alle informazionidel mio account?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Clicca sulla campanella
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item border-0">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Posso usare questa dashboard da mobile?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Clicca sulla campanella
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
