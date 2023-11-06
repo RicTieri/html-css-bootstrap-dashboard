@@ -4,7 +4,7 @@ body {
 
 /* header */
 
-header{
+header {
   height: 60px;
 }
 
@@ -46,7 +46,6 @@ header form {
   color: goldenrod;
 }
 
-
 /* aside */
 
 aside {
@@ -71,11 +70,11 @@ aside a {
   color: white;
 }
 
-aside li:hover{
+aside li:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-aside li{
+aside li {
   padding: .5rem;
 }
 
@@ -88,49 +87,52 @@ aside li{
   overflow-y: scroll;
 }
 
-.header-banner{
+.header-banner {
   background-color: #1b72e8;
   color: white;
 }
 
-.header-banner h1{
+.header-banner h1 {
   display: inline-block;
   font-size: 2rem;
 }
 
-.myspacer{
+.myspacer {
   display: inline;
 }
 
-.my_item-lg{
+.my_item-lg {
   display: none;
 }
 
-.my_item-sm{
+.my_item-sm {
   display: inline-block;
 }
 
-.custom-btn{
+.custom-btn {
   display: inline-block;
   background-color: #165bba;
   border-radius: 50px;
   font-size: .8rem;
+  border: none;
+  color: white;
 }
 
-.my_add-btn{
+.my_add-btn {
   border: 1px solid white;
+  background-color: #1b72e8;
   padding: .5rem .75rem;
   margin: 0 1rem;
   border-radius: 5px;
 }
 
-.my_add-btn:hover{
+.my_add-btn:hover {
   background-color: white;
   color: black;
   cursor: pointer;
 }
 
-.my_tag{
+.my_tag {
   border-radius: 50%;
   padding: .25rem;
   color: white;
@@ -139,13 +141,15 @@ aside li{
 
 /* media queries */
 
-@media  screen and (max-width:576px) {
+@media screen and (max-width:576px) {
+
   th:nth-child(2),
-  th:nth-child(3){
+  th:nth-child(3) {
     display: none;
   }
+
   td:nth-child(2),
-  td:nth-child(3){
+  td:nth-child(3) {
     display: none;
   }
 }
@@ -179,11 +183,11 @@ aside li{
 }
 
 @media screen and (min-width:1200px) {
-  .my_item-lg{
+  .my_item-lg {
     display: inline-block;
   }
 
-  .my_item-sm{
+  .my_item-sm {
     display: none;
   }
 }

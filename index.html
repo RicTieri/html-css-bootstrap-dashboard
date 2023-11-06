@@ -42,7 +42,16 @@
             <a class="nav-link my_collapse" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-bell"></i></a>
+            <div class="dropstart">
+              <button class="btn btn-secondary btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bell"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -69,17 +78,17 @@
           <div class="col-12 col-md-4 col-xl-6 p-3 order-sm-1 order-md-0">
             <div>
               <h1>Boolean</h1>
-              <div class="custom-btn py-1 px-2">Piano blaze</div>
+              <button class="custom-btn py-1 px-2">Piano blaze</button>
             </div>
             <div class="custom-btn py-1 px-2">3 app</div>
             <div class="myspacer"><i class="fa-solid fa-angles-right"></i></div>
             <div class="my_item-lg my-1">
-              <div class="custom-btn py-1 px-2">Boolean mobile app</div>
-              <div class="custom-btn py-1 px-2">Boolean web app</div>
-              <div class="custom-btn py-1 px-2">Boolean blog app</div>
+              <button class="custom-btn py-1 px-2">Boolean mobile app</button>
+              <button class="custom-btn py-1 px-2">Boolean web app</button>
+              <button class="custom-btn py-1 px-2">Boolean blog app</button>
             </div>
             <div class="my_item-sm">
-              <div class="custom-btn py-1 px-2"><i class="fa-solid fa-plus"></i></div>
+              <button class="custom-btn py-1 px-2"><i class="fa-solid fa-plus"></i></button>
             </div>
           </div>
           <div class="col-12 col-md-4 col-xl-3 p-3 order-sm-1 order-md-0">
@@ -88,7 +97,23 @@
           </div>
           <div class="col-12 col-md-4 col-xl-3 py-4 order-sm-0 order-md-0">
             <span>Nuovo Studente</span>
-            <span class="my_add-btn"><i class="fa-solid fa-plus"></i></span>
+            <button class="btn btn-primary my_add-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div>
+                  <div class="row">
+                  <input class="form-control d-inline-block" type="text">
+                  <input class="form-control d-inline-block" type="text">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -114,134 +139,182 @@
                       </thead>
                       <tbody>
                         <tr class="align-middle">
-                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i class="fa-solid fa-code"></i></span>Classe 75</th>
+                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i
+                                class="fa-solid fa-code"></i></span>Classe 75</th>
                           <td class="text-center">15 Feb 2021</td>
                           <td class="text-center">20%</td>
-                          <td class="text-center"><button type="button" class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
+                          <td class="text-center"><button type="button"
+                              class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
                           <td class="text-center">
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-trash-can"></i></button>
+                          </td>
                         </tr>
                         <tr class="align-middle">
-                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i class="fa-solid fa-code"></i></span>Classe 76</th>
+                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i
+                                class="fa-solid fa-code"></i></span>Classe 76</th>
                           <td class="text-center">16 Feb 2021</td>
                           <td class="text-center">20%</td>
-                          <td class="text-center"><button type="button" class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
+                          <td class="text-center"><button type="button"
+                              class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
                           <td class="text-center">
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-trash-can"></i></button>
+                          </td>
                         </tr>
                         <tr class="align-middle">
-                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i class="fa-solid fa-code"></i></span>Classe 77</th>
+                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i
+                                class="fa-solid fa-code"></i></span>Classe 77</th>
                           <td class="text-center">17 Feb 2021</td>
                           <td class="text-center">20%</td>
-                          <td class="text-center"><button type="button" class="btn btn-warning btn-sm py-0 rounded-3 text-white">process</button></td>
+                          <td class="text-center"><button type="button"
+                              class="btn btn-warning btn-sm py-0 rounded-3 text-white">process</button></td>
                           <td class="text-center">
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-trash-can"></i></button>
+                          </td>
                         </tr>
                         <tr class="align-middle">
-                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i class="fa-solid fa-code"></i></span>Classe 78</th>
+                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i
+                                class="fa-solid fa-code"></i></span>Classe 78</th>
                           <td class="text-center">18 Feb 2021</td>
                           <td class="text-center">20%</td>
-                          <td class="text-center"><button type="button" class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
+                          <td class="text-center"><button type="button"
+                              class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
                           <td class="text-center">
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-trash-can"></i></button>
+                          </td>
                         </tr>
                         <tr class="align-middle">
-                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i class="fa-solid fa-code"></i></span>Classe 79</th>
+                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i
+                                class="fa-solid fa-code"></i></span>Classe 79</th>
                           <td class="text-center">19 Feb 2021</td>
                           <td class="text-center">20%</td>
-                          <td class="text-center"><button type="button" class="btn btn-danger btn-sm py-0 rounded-3">failed</button></td>
+                          <td class="text-center"><button type="button"
+                              class="btn btn-danger btn-sm py-0 rounded-3">failed</button></td>
                           <td class="text-center">
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-trash-can"></i></button>
+                          </td>
                         </tr>
                         <tr class="align-middle">
-                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i class="fa-solid fa-code"></i></span>Classe 80</th>
+                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i
+                                class="fa-solid fa-code"></i></span>Classe 80</th>
                           <td class="text-center">20 Feb 2021</td>
                           <td class="text-center">20%</td>
-                          <td class="text-center"><button type="button" class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
+                          <td class="text-center"><button type="button"
+                              class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
                           <td class="text-center">
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-trash-can"></i></button>
+                          </td>
                         </tr>
                         <tr class="align-middle">
-                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i class="fa-solid fa-code"></i></span>Classe 81</th>
+                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i
+                                class="fa-solid fa-code"></i></span>Classe 81</th>
                           <td class="text-center">21 Feb 2021</td>
                           <td class="text-center">20%</td>
-                          <td class="text-center"><button type="button" class="btn btn-danger btn-sm py-0 rounded-3">failed</button></td>
+                          <td class="text-center"><button type="button"
+                              class="btn btn-danger btn-sm py-0 rounded-3">failed</button></td>
                           <td class="text-center">
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-trash-can"></i></button>
+                          </td>
                         </tr>
                         <tr class="align-middle">
-                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i class="fa-solid fa-code"></i></span>Classe 82</th>
+                          <th scope="row" class="fw-normal"><span class="my_tag me-2"><i
+                                class="fa-solid fa-code"></i></span>Classe 82</th>
                           <td class="text-center">22 Feb 2021</td>
                           <td class="text-center">20%</td>
-                          <td class="text-center"><button type="button" class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
+                          <td class="text-center"><button type="button"
+                              class="btn btn-success btn-sm py-0 rounded-3">Done</button></td>
                           <td class="text-center">
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-pen"></i></button>
-                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-pen"></i></button>
+                            <button type="button" class="btn btn-outline-secondary px-2 py-1"><i
+                                class="fa-solid fa-trash-can"></i></button>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
-              <div class="col-12">
-                <div class="card mb-3">
-                  <div class="card-header fw-medium fs-4">
-                    F.A.Q.
+                <div class="col-12">
+                  <div class="card mb-3">
+                    <div class="card-header fw-medium fs-4">
+                      F.A.Q.
+                    </div>
+                    <ul class="list-group list-group-flush p-3">
+                      <li class="list-group-item d-flex">Come aggiungere un nuovo studente?<i
+                          class="fa-solid fa-angle-down ms-auto"></i>
+                        <div class="my_faq_hidden"></div></li>
+                      <li class="list-group-item d-flex">Come posso accedere alle informazioni del mio account?<i
+                          class="fa-solid fa-angle-down ms-auto"></i></li>
+                      <li class="list-group-item d-flex">Posso usare questa dashboard da mobile?<i
+                          class="fa-solid fa-angle-down ms-auto"></i></li>
+                    </ul>
                   </div>
-                  <ul class="list-group list-group-flush p-3">
-                    <li class="list-group-item d-flex">Come aggiungere un nuovo studente?<i class="fa-solid fa-angle-down ms-auto"></i></li>
-                    <li class="list-group-item d-flex">Come posso accedere alle informazioni del mio account?<i class="fa-solid fa-angle-down ms-auto"></i></li>
-                    <li class="list-group-item d-flex">Posso usare questa dashboard da mobile?<i class="fa-solid fa-angle-down ms-auto"></i></li>
-                  </ul>
                 </div>
               </div>
             </div>
+            <div class="col-12 col-lg-4"></div>
           </div>
-          <div class="col-12 col-lg-4"></div>
-        </div>
-        <div class="col-12 col-xl-4">
-          <div class="col-12">
-            <div class="card mb-3">
-              <div class="card-header fw-medium fs-4">
-                Todo
-              </div>
-              <ul class="list-group list-group-flush p-3">
-                <li class="list-group-item border border-bottom-0 rounded-top"><input type="checkbox" class="me-2">Kickoff nuove classi</i></li>
-                <li class="list-group-item border"><input type="checkbox" class="me-2">Lezione su Boostrap 5 in classe #75</li>
-                <li class="list-group-item border border-top-0 rounded-bottom"><input type="checkbox" class="me-2">Controllare username github studenti</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="card p-3">
-              <div class="card">
-                <img src="./img/stats.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Utenti attivi</h5>
-                  <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+          <div class="col-12 col-xl-4">
+            <div class="col-12">
+              <div class="card mb-3">
+                <div class="card-header fw-medium fs-4">
+                  Todo
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Gennaio: 1200</li>
-                  <li class="list-group-item">Febbraio: 800</li>
-                  <li class="list-group-item">Marzo: 1500</li>
+                <ul class="list-group list-group-flush p-3">
+                  <li class="list-group-item border border-bottom-0 rounded-top"><input class="form-check-input me-2" type="checkbox">Kickoff nuove classi</i></li>
+                  <li class="list-group-item border"><input type="checkbox" class="form-check-input me-2">Lezione su Boostrap 5 in classe
+                    #75</li>
+                  <li class="list-group-item border border-top-0 rounded-bottom"><input type="checkbox"
+                    class="form-check-input me-2">Controllare username github studenti</li>
                 </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Visualizza report approfondito</a>
-                </div>
               </div>
             </div>
+            <div class="col-12">
+              <div class="card p-3">
+                <div class="card">
+                  <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Utenti attivi</h5>
+                    <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Gennaio: 1200</li>
+                    <li class="list-group-item">Febbraio: 800</li>
+                    <li class="list-group-item">Marzo: 1500</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="#" class="card-link">Visualizza report approfondito</a>
+                  </div>
+                </div>
+              </div>
 
-        </div>
+            </div>
       </section>
     </section>
   </main>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
