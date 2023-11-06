@@ -139,6 +139,10 @@ aside li {
   background-color: #f26551;
 }
 
+.offcanvas.offcanvas-end{
+  width: 100%;
+}
+
 /* media queries */
 
 @media screen and (max-width:576px) {
@@ -179,6 +183,9 @@ aside li {
   .my_sm_aside {
     display: none;
   }
+  .offcanvas.offcanvas-end{
+    width: 60%;
+  }
 
 }
 
@@ -189,5 +196,8 @@ aside li {
 
   .my_item-sm {
     display: none;
+  }
+  .offcanvas.offcanvas-end{
+    width: 40%;
   }
 }
