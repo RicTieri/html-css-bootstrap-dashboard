@@ -82,7 +82,7 @@ aside li{
 /* main-content */
 
 .main-content {
-  background-color: lightgreen;
+  background-color: #f8f9fa;
   width: 100%;
   height: calc(100vh - 60px);
   overflow-y: scroll;
