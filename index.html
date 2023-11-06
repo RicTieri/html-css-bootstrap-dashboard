@@ -97,10 +97,12 @@
           </div>
           <div class="col-12 col-md-4 col-xl-3 py-4 order-sm-0 order-md-0">
             <span>Nuovo Studente</span>
-            <button class="btn btn-primary my_add-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <button class="btn btn-primary my_add-btn" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
               <i class="fa-solid fa-plus"></i>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas offcanvas-end w-auto" tabindex="-1" id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title">Inserisci un nuovo studente</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -108,8 +110,14 @@
               <div class="offcanvas-body">
                 <div>
                   <div class="row">
-                  <input class="form-control d-inline-block" type="text">
-                  <input class="form-control d-inline-block" type="text">
+                    <div class="mb-3 col-6">
+                      <label for="formGroupExampleInput" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput">
+                    </div>
+                    <div class="mb-3 col-6">
+                      <label for="formGroupExampleInput2" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -260,9 +268,10 @@
                       F.A.Q.
                     </div>
                     <ul class="list-group list-group-flush p-3">
-                      <li class="list-group-item d-flex">Come aggiungere un nuovo studente?<i
-                          class="fa-solid fa-angle-down ms-auto"></i>
-                        <div class="my_faq_hidden"></div></li>
+                      <li class="list-group-item d-flex">
+                        Come aggiungere un nuovo studente?<i class="fa-solid fa-angle-down ms-auto"></i>
+                        <div class="my_faq_hidden"></div>
+                      </li>
                       <li class="list-group-item d-flex">Come posso accedere alle informazioni del mio account?<i
                           class="fa-solid fa-angle-down ms-auto"></i></li>
                       <li class="list-group-item d-flex">Posso usare questa dashboard da mobile?<i
@@ -281,11 +290,13 @@
                   Todo
                 </div>
                 <ul class="list-group list-group-flush p-3">
-                  <li class="list-group-item border border-bottom-0 rounded-top"><input class="form-check-input me-2" type="checkbox">Kickoff nuove classi</i></li>
-                  <li class="list-group-item border"><input type="checkbox" class="form-check-input me-2">Lezione su Boostrap 5 in classe
+                  <li class="list-group-item border border-bottom-0 rounded-top"><input class="form-check-input me-2"
+                      type="checkbox">Kickoff nuove classi</i></li>
+                  <li class="list-group-item border"><input type="checkbox" class="form-check-input me-2">Lezione su
+                    Boostrap 5 in classe
                     #75</li>
                   <li class="list-group-item border border-top-0 rounded-bottom"><input type="checkbox"
-                    class="form-check-input me-2">Controllare username github studenti</li>
+                      class="form-check-input me-2">Controllare username github studenti</li>
                 </ul>
               </div>
             </div>
