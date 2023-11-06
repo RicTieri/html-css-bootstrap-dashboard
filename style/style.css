@@ -4,6 +4,10 @@ body {
 
 /* header */
 
+header{
+  height: 60px;
+}
+
 .my_logo-lg {
   display: none;
 }
@@ -48,7 +52,7 @@ header form {
 aside {
   background-image: url(../img/sidebar-bg.png);
   background-color: #051e34;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 60px);
   width: 50px;
   color: white;
 }
@@ -125,6 +129,13 @@ aside li{
   cursor: pointer;
 }
 
+.my_tag{
+  border-radius: 50%;
+  padding: .25rem;
+  color: white;
+  background-color: #f26551;
+}
+
 /* media queries */
 
 @media screen and (min-width:992px) {
@@ -141,7 +152,7 @@ aside li{
   }
 
   aside {
-    height: calc(100vh - 57px);
+    height: calc(100vh - 60px);
     width: 170px;
   }
 
