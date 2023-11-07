@@ -23,7 +23,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand bg-body-tertiary">
-      <div class="container-fluid d-flex">
+      <div class="container-fluid d-flex my_nav">
         <a class="navbar-brand my_logo-lg" href="#"><img src="./img/logo.svg" alt="logo-lg"></a>
         <a class="navbar-brand my_logo-sm" href="#"><img src="./img/mobile-logo.png" alt="logo-sm"></a>
         <form class="d-flex" role="search">
@@ -60,16 +60,16 @@
   <main class="d-flex">
     <aside class="d-flex flex-column justify-content-between">
       <ul class="pt-4">
-        <li class="mx-2 mb-3 my_lg_aside"><a href="#"><i class="fa-solid fa-house me-3"></i>Home</a></li>
-        <li class="mx-2 mb-3 my_lg_aside"><a href="#"><i class="fa-solid fa-chart-simple me-4"></i>Stats</a></li>
-        <li class="mx-2 mb-3 my_lg_aside"><a href="#"><i class="fa-solid fa-signal me-3"></i>Signals</a></li>
-        <li class="mb-3 my_sm_aside"><a href="#"><i class="fa-solid fa-house me-2"></i></a></li>
-        <li class="mb-3 my_sm_aside"><a href="#"><i class="fa-solid fa-chart-simple me-2"></i></a></li>
-        <li class="mb-3 my_sm_aside"><a href="#"><i class="fa-solid fa-signal me-2"></i></a></li>
+        <li class="p-2 my_lg_aside"><a href="#"><i class="fa-solid fa-house me-3"></i>Home</a></li>
+        <li class="p-2 my_lg_aside"><a href="#"><i class="fa-solid fa-chart-simple me-4"></i>Stats</a></li>
+        <li class="p-2 my_lg_aside"><a href="#"><i class="fa-solid fa-signal me-3"></i>Signals</a></li>
+        <li class="p-2 my_sm_aside"><a href="#"><i class="fa-solid fa-house me-2"></i></a></li>
+        <li class="p-2 my_sm_aside"><a href="#"><i class="fa-solid fa-chart-simple me-2"></i></a></li>
+        <li class="p-2 my_sm_aside"><a href="#"><i class="fa-solid fa-signal me-2"></i></a></li>
       </ul>
       <ul>
-        <li class="mx-2 mb-2 my_lg_aside"><a href="#"><i class="fa-solid fa-gear me-3"></i>Admin</a></li>
-        <li class="mb-4 my_sm_aside"><a href="#"><i class="fa-solid fa-gear me-2"></i></a></li>
+        <li class="p-2 my_lg_aside"><a href="#"><i class="fa-solid fa-gear me-3"></i>Admin</a></li>
+        <li class="p-2 my_sm_aside"><a href="#"><i class="fa-solid fa-gear me-2"></i></a></li>
       </ul>
     </aside>
     <section class="main-content">
@@ -112,35 +112,35 @@
               <div class="offcanvas-body">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-12 col-md-6">
                       <label for="formGroupExampleInput" class="form-label">Nome</label>
                       <input type="text" class="form-control" id="formGroupExampleInput">
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-12 col-md-6">
                       <label for="formGroupExampleInput2" class="form-label">Cognome</label>
                       <input type="text" class="form-control" id="formGroupExampleInput2">
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-12 col-md-6">
                       <label for="basic-addon1" class="form-label">Email</label>
-                      <div class="input-group mb-3 col-6">
+                      <div class="input-group mb-3 col-12 col-md-6">
                         <span class="input-group-text" id="basic-addon1">@</span>
                         <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                           aria-describedby="basic-addon1">
                       </div>
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-12 col-md-6">
                       <label for="formGroupExampleInput2" class="form-label">Password</label>
                       <input type="text" class="form-control" id="formGroupExampleInput2">
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-12 col-md-6">
                       <label for="basic-addon1" class="form-label">Indirizzo email</label>
-                      <div class="input-group mb-3 col-6">
+                      <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">@</span>
                         <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                           aria-describedby="basic-addon1">
                       </div>
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-12 col-md-6">
                       <label for="formGroupExampleInput2" class="form-label">Password</label>
                       <input type="text" class="form-control" id="formGroupExampleInput2">
                     </div>
@@ -148,11 +148,11 @@
                       <label for="formGroupExampleInput" class="form-label">Indirizzo</label>
                       <input type="text" class="form-control" id="formGroupExampleInput">
                     </div>
-                    <div class="mb-3 col-6">
+                    <div class="mb-3 col-12 col-md-6">
                       <label for="formGroupExampleInput" class="form-label">Città</label>
                       <input type="text" class="form-control" id="formGroupExampleInput">
                     </div>
-                    <div class="mb-3 col-4">
+                    <div class="mb-3 col-8 col-md-4">
                       <label class="form-label" for="inputGroupSelect01">Stato</label>
                       <select class="form-select" id="inputGroupSelect01">
                         <option selected>Scegli...</option>
@@ -161,7 +161,7 @@
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="mb-3 col-2">
+                    <div class="mb-3 col-4 col-md-2">
                       <label for="formGroupExampleInput" class="form-label">CAP</label>
                       <input type="number" class="form-control" id="formGroupExampleInput">
                     </div>
