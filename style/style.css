@@ -183,10 +183,6 @@ aside li:hover {
   .my_sm_aside {
     display: none;
   }
-  .offcanvas.offcanvas-end{
-    width: 50%;
-  }
-
 }
 
 @media screen and (min-width:1200px) {
